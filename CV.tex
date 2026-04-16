@@ -90,66 +90,90 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{zjz.jpg}};
   \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{张雨桐}} 
 
-\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
-
-\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
+\centerline{\normalsize{\faPhone\ 17682448665 \quad \faEnvelopeO\ \href{mailto:3220106366@zju.edu.cn}{3220106366@zju.edu.cn}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
+\textbf{浙江大学} \hfill 2022.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
+园林\quad 大四 
 \begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+    \item 相关课程：《Python基础》、《应用数理统计》
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{淘天--闲鱼首页产品组}  产品实习生  \hfill2025.7 -- 2025.9 \titlebreak
+\textbf{项目背景}：闲鱼新发页面是平台驱动GMV与用户留存增长的核心版块之一。通过站内反馈数据分析与定量用户问卷调研发现，用户对意
+  向品类商品的触达满意度明显偏低，约6.3％的用户存在重复搜索同类商品的行为，说明"精准触达品类上新推送"是用户的高优先级未满足需求。基于此，设
+  计订阅上新功能，以提升平台匹配效率、订阅转化率与用户次日留存。
+\textbf{ 搭建订阅上新功能与触达链路}： 在新发页面新增两个卡片位订阅入口，设计含即时反馈提示的二级订阅弹窗及订阅后商品即时推送链路，强化用户感知与操作闭环。经过多轮测试验证最优方案，推送点击率由2.45％提升至3.17％，订阅转化率由4.72％提升至7.15％。
+\textbf{ 设计精准订阅品类选项}：通过算法对商品进行更详细的品类分类，在跳转后的商品瀑布流页面中增加信用等级、发布时间窗口等多维度筛选条件，满足提出精准订阅需求用户中约30％的用户的需要，并通过AB测试剔除低效选项以降低干扰。功
+  能上线后相同搜索词重复发起率下降4.71pp，高频用户在新发Tab的人均浏览时长由45.2s提升至49.97s。
+\textbf{ 接入内容召回模型进行商品重排序}： 在用户点击订阅品类后，通过三级界面跳转接入基于用户实时行为的推荐召回模型（涵盖规则召回、协同过滤与向量召回），解决发布时间久的商
+  品难被触达的问题，优化商品曝光逻辑。
+% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
+
+
+% --- 第二个项目 ---
+% 将标题行末尾的 \\ 替换为 \titlebreak 命令
+\textbf{京东--京东养车产品组}  AI产品实习生  \hfill2026.1 -- 2026.3 \titlebreak
+\textbf{项目背景}：产品、设计、运营三方中长期存在设计要求难对齐、耗费大量时间在较基础设计沟通上的痛点，基于此问题，团队希望能有统一的工作流解决。2025年AI发展迅速，由此想到引入AI Native的方式解决。
+\textbf{ 交互设计知识构建页面诊断方法}：请教设计师以及阅读8本以上交互设计经典书籍，将关键知识整合汇总，通过AI IDE让Agent分析汇总理论体系，分层次进行整合。最终形成四层递进式的页面诊断方法。
+\textbf{ 工程化封装skill}：整个Skill的封装经过了三轮迭代，改写模糊语义表述为定量标准，减少语义导致的分析误差；引入脚本驱动代替语义驱动，确保分析按照步骤进行；分解设计定律为独立的13个文件，避免过长上下文分散模型注意力。
+\textbf{ 验证skill使用效果}： 选择多个页面截图，在3个独立对话窗口分别运行Skill,输出的结构完整率验证提高到95％以上；将Skill输出的诊断报告交给设计师进行评审，综合质量评分达到90％。Skill上线至JoyClaw平台后，下载量达到200+，页面设计共识周期较平均值缩短了4天，有效提高了多岗位沟通效率。
+% 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
+
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
+
+
+% --- 第三个项目 ---
+% 将标题行末尾的 \\ 替换为 \titlebreak 命令
+\textbf{股票投资顾问Agent系统} \hfill  2025.02--2025.07  \titlebreak
+\textbf{项目背景}：利用大模型为普通投资者提供股票投资咨询，但初版的通用大模型+网络检索的方案存在数据不一致、分析维度不足、输出不专业等问题，难以直接给用户投资参考。\titlebreak
+\textbf{项目方案}：1.数据工具化。2.ReAct 框架 + 多Agent协作。3.新闻因子小模型。4.性能与质量优化。5.模型接入与评测。
+
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{数据工具化}：基于 MCP 协议封装金融数据API，统一数据 Schema，确保金融数据准确性和可追溯性。
+    \item \textbf{ReAct 框架 + 多Agent协作}：基于 LangGraph 和 ReAct 实现四个分析 Agent（基本面、技术面、估值、新闻），支持自主调用 MCP 工具获取数据；由总结 Agent 汇总结果，生成包含核心指标和结构化建议的 Markdown 报告。
+    \item \textbf{新闻因子小模型}：整理并标注约 10 万条金融新闻，基于Qwen3-8B LoRA微调情感与风险预测模型（测试集准确率 91%/88%），用于辅助新闻分析。
+    \item \textbf{新闻因子小模型}：设计评测体系，监控工具调用成功率、数据一致率、端到端时延；通过并行执行与缓存，将时延从 2分钟+ 秒降低至 90 秒左右。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
 \projectsep
 
-% --- 第二个项目 ---
-\textbf{AIGC驱动的超进化自动挖坑机 (Agent)} \hfill 2025.02 -- 至今 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
+% --- 第四个项目 ---
+\textbf{PPT优化及生成Agent} \hfill  \titlebreak
+\textbf{项目背景}：市面主流文档转PPT工具普遍存在内容冗余、视觉单调、结构生硬等问题，尤其无法自动复现原文中的图片和表格，难以满足真实办公和学术场景下对高质量演示文稿的需求。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{并发与调度}：后端采用 \textbf{Go} 语言，充分利用 \textbf{Goroutine} 和 \textbf{Channel} 的高并发模型，模拟\textbf{用户并发在线}，执行定时挖坑，确保挖坑行动的\textbf{隐蔽性}与\textbf{高效性}。
-    \item \textbf{实时监控与响应}：运用 \textbf{WebSocket} 协议实现了对目标帖子的\textbf{实时监听与交互}。确保在烂坑被识破的第一时间，Agent能光速完成\textbf{“lktp”}或\textbf{反向钓鱼}操作，展现出极高的AI博弈能力。
-    \item \textbf{可视化GUI}：前端使用 \textbf{React} 框架构建了\textbf{后台管理的可视化面板 (Admin Panel)}。可一键下达挖坑指令、动态调整Agent的\textbf{指令}、并实时监控数据。
+    \item \textbf{基于参考驱动的编辑式生成框架}：- 设计基于参考驱动的编辑式生成框架，将幻灯片生成过程建模为对参考PPT的批量增删改（function call API序列），支持文本、图片等多类型元素的自动编辑与自我修正，显著提升内容结构、视觉风格的适配性与系统鲁棒性。
+    \item \textbf{使用层次聚类算法}：基于ViT模型提取幻灯片页面的图像 embedding，通过层次聚类算法进行视觉版式自动分组，并结合大模型gpt-4o抽取每类页面的结构化内容模式(schema)，支撑高效风格迁移。
+    \item \textbf{构建HTML化的幻灯片解析与编辑环境}：将原始XML结构转为HTML，显著降低大模型gpt-4o对页面布局的理解与操作难度。
+    \item \textbf{多维度自动评价体系}：设计并落地多维度自动评价体系，融合内容丰富度、设计美观性与结构连贯性等指标，自动评价分数与人工评分一致性达0.7以上。
 \end{itemize}
+\textbf{项目成果}：系统在Zenodo10K等多领域公开数据集上测试，内容、设计、连贯性三项指标较模板法/规则法基线平均提升13％~29％，结构连贯性得分提升超25％，最终平均得分3.67/5。
 
-\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
+% 使用 \projectsep 命令来分隔两个项目
+\projectsep
+
+
+\section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技能}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} \textbf{Go}, Python, C++
-    \item \textbf{开发工具：} SSH, Git, Vim, MakeFile,LaTex
-    \item \textbf{操作系统：} Linux
-\end{itemize}
-\section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
-\begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
-    
-\end{itemize}
-    
-\section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
-\begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://maksymilan.github.io/}{https://maksymilan.github.io/}
-    \item \textbf{GitHub：} \href{https://github.com/maksymilan}{https://github.com/maksymilan} 
-    \item \textbf{英语水平：} CET-4, CET-6
+    \item \textbf{英语水平：} CET4 
+    \item \textbf{软件：} 基本掌握Python,熟练使用各类设计软件如Photoshop,CAD，SketchUp等
 \end{itemize}
 \end{document}
